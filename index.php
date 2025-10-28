@@ -143,6 +143,7 @@
             </div>
         </section>
 
+        <!--
         <section class="contact py-5">
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -180,7 +181,7 @@
                 </div>
             </div>
         </section>
-
+        -->
     </main>
     <footer class="py-4 bg-white text-center">
         <div class="load-image ft-logo mb-3 mx-auto" data-src="assets/images/rafael-braga-medico-oftalmologista.png" data-webp="assets/images/webp/rafael-braga-medico-oftalmologista.webp" data-class="mx-auto"></div>
