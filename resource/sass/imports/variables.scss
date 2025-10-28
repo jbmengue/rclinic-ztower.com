@@ -1,0 +1,103 @@
+$body-bg: #fff;
+$body-color: #6e6e6e;
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$font-weight-bolder: 700;
+$headings-font-weight: 700;
+$headings-line-height: 1;
+
+$enable-negative-margins: true;
+
+$font-family-base: "Exo 2", sans-serif;
+$font-family-primary: "Work Sans", sans-serif;
+
+$default: $body-color;
+$primary: #DFA94A;
+$secondary: #000000;
+$gray-light: #e8e8e8;
+$gray-400: #a7a6a6;
+$gray-600: #6e6e6e;
+$gray-800: #474848;
+$gray-900: #333333;
+$dark: #000;
+$white: #fff;
+
+$spacer: 1.5rem !default;
+
+$headings-font-family: $font-family-base;
+$headings-color: $default;
+$headings-margin-bottom: 3rem;
+$h1-font-size: 1.7337rem;
+$h2-font-size: 1.2rem;
+
+$link-color: $white;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x: 0.6rem;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+$btn-border-width: 1px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$display1-weight: $font-weight-bold;
+$display2-weight: $font-weight-bold;
+$display3-weight: $font-weight-bold;
+$display4-weight: $font-weight-bold;
+
+$border-radius: .2rem;
+$border-radius-sm: .4rem;
+$border-radius-lg: .8rem;
+
+$input-bg: transparent;
+$input-border-color: $white;
+$input-border-width: 1px;
+$input-padding-x: 1.5rem;
+$input-color: $white;
+$input-focus-bg: none;
+$input-focus-color: $white;
+
+$font-size-xx-small: 0.625rem;
+/*10px*/
+$font-size-x-small: 0.6875rem;
+/*12px*/
+$font-size-small-n: 0.8125rem;
+/*13px*/
+$font-size-small: 0.875rem;
+/*14px*/
+$font-size-normalsize: 1rem;
+/*16px*/
+$font-size-large: 1.125rem;
+/*18px*/
+$font-size-x-large: 1.25rem;
+/*20px*/
+$font-size-xx-large: 1.375rem;
+/*22px*/
+$font-size-xxx-large: 1.5625rem;
+/*25px*/
+$font-size-big: 1.875rem;
+/*30px*/
+$font-size-x-big: 2.1875rem;
+/*35px*/
+$font-size-xx-big: 2.5rem;
+/*40px*/
+$font-size-xxx-big: 3.75rem;
+/*60px*/
+
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+$custom-colors: (
+    "gray-600":   $gray-600
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);

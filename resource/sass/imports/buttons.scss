@@ -1,0 +1,26 @@
+.btn-primary {
+    @include button-variant(
+        $primary, 
+        $primary, 
+        $white, 
+        lighten($primary,5%), 
+        lighten($primary, 10%), 
+        $white
+    );
+    @include button-size(10px, 30px, 1.1146rem, .8rem);
+    font-family: $font-family-primary;
+    font-weight: 700;
+}
+.btn-secondary {
+    @include button-variant(
+        $gray-200, 
+        $gray-200, 
+        $gray-600, 
+        lighten($gray-400, 5%), 
+        lighten($gray-400, 10%), 
+        $white
+    );
+    @include button-size(20px, 30px, 1.1146rem, .2rem);
+    font-family: $font-family-primary;
+    font-weight: 700;
+}

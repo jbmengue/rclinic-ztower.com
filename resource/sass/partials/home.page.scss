@@ -1,0 +1,145 @@
+@import "../imports/variables";
+@import "../imports/mixin";
+
+header{
+    .col-12{
+        position: relative;
+        height: 35rem;
+        
+        @media (min-width: 768px){
+            background-position: center right;
+            background-size: cover;
+        }
+        @media (max-width: 767px){
+            background: no-repeat;
+        }
+        
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #F7F7F9;
+            width: 50%;
+            height: 100%;
+            left: -50%;
+        }
+
+        .banner-content{
+            @media (min-width: 768px){
+                width: 40%;
+            }
+            .logo {
+                max-width: 100%;
+                
+                @media (min-width: 410px){
+                    max-width: 410px;
+                }
+            }
+            
+            .banner-link{
+                color: #37465A;
+                font-size: 1.6099rem;
+                line-height: 2.275rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
+main{
+    .icon{
+        display: block;
+        margin: 0 auto;
+        width: 66px;
+        height: 66px;
+        @include rounded-circle();
+        background-color: $gray-light;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 65%;
+
+        &.icon-1{
+            background-image: url(../icons/health-report.png);
+        }
+        &.icon-2{
+            background-image: url(../icons/sid-view.png);
+        }
+        &.icon-3{
+            background-image: url(../icons/medicine.png);
+        }
+        &.icon-4{
+            background-image: url(../icons/laser-surgery.png);
+        }
+    }
+}
+
+section.schedule{
+    position: relative;
+    background: #000 url(../images/dr-rafael.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $dark;
+        opacity: .75;
+    }
+
+    .container-fluid{
+        position: relative;
+        z-index: 1000;
+
+        .social-network-item{
+            width: 32px;
+        }
+    }
+}
+
+section.contact{
+    background-color: #393939;
+
+    a {
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+footer{
+    .ft-logo{
+        max-width: 250px;
+    }
+}
+
+.lnk-whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    background-color: #54c566;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    z-index: 999999;
+    padding: 15px;
+
+    &:hover {
+        width: 80px;
+        height: 80px;
+        right: 15px;
+        bottom: 30px;
+        -webkit-box-shadow: 0 5px 5px 0 rgb(0 0 0 / 25%);
+        -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+        box-shadow: 0 5px 5px 0 rgb(0 0 0 / 25%);
+    }
+}

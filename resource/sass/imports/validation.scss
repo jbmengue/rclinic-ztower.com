@@ -1,0 +1,54 @@
+/*
+*   BEGIN: Validation
+*/
+label.error {
+    font-size: 10px;
+    color: #f06363;
+    right: 15px;
+    top: 8px;
+    float: right;
+    margin: -35px 8px;
+    z-index: 999999;
+    position: relative;
+}
+textarea > label.error {
+    top: 0;
+}
+.msg-registration {
+    text-align: center;
+    background: #ccc;
+    display: table;
+    margin: 0 auto;
+    padding: 25px 30px 0;
+}
+.msg-registration.default {
+    background: none;
+}
+.msg-registration p {
+    font-size: 0.75rem;
+}
+.msg-registration.success,
+.msg-registration.success h5 {
+    background-color: $success;
+    color: $white;
+}
+.msg-registration.error,
+.msg-registration.error h5 {
+    background-color: $danger;
+    color: $white;
+}
+.msg-registration.success {
+    border: 1px solid $success;
+}
+.msg-registration.error {
+    border: 1px solid $danger;
+}
+.bs-callout-success h4 {
+    color: $success;
+}
+.bs-callout-danger h4 {
+    color: $danger;
+}
+/*
+*   END: Validation
+*/

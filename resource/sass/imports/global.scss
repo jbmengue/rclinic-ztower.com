@@ -1,0 +1,144 @@
+@import "variables";
+@import "typography";
+
+
+// Optional
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/bootstrap-utilities";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/modal";
+
+@import "./assets/icons/flaticons/font/_flaticon";
+
+@import "buttons";
+@import "mixin";
+
+html,body {
+    font-family: $font-family-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.transition{
+    @include transition();
+}
+a,
+button,
+*:before,
+*:after,
+label,
+.transition {
+    @include transition;
+}
+.valign {
+    @include valign();
+}
+.container-fluid {
+    max-width: 1200px;
+}
+.container-fluid.wide {
+    max-width: 1400px !important;
+}
+.img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn.btn-gradient{
+    background-image: var(--bs-gradient);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: color 9999s ease-out, background-color 5000s ease-in-out 0s !important;
+}
+
+/**
+*   BEGIN: Fonts
+*/
+.font-family-base {
+    font-family: $font-family-base;
+}
+.font-family-primary {
+    font-family: $font-family-primary;
+}
+
+.light {
+    font-weight: $font-weight-light;
+}
+.regular {
+    font-weight: $font-weight-regular;
+}
+.semibold {
+    font-weight: $font-weight-semibold;
+}
+.bold {
+    font-weight: $font-weight-bold;
+}
+/*
+*   END: Fonts
+*/
+
+
+
+/**
+*   BEGIN: Fonts Size
+*/
+.xx-small {
+    font-size: $font-size-xx-small;
+}
+.x-small {
+    font-size: $font-size-x-small;
+}
+.small {
+    font-size: $font-size-small;
+}
+.small-n {
+    font-size: $font-size-small-n;
+}
+.normalsize {
+    font-size: $font-size-normalsize;
+}
+.large {
+    font-size: $font-size-large;
+}
+.x-large {
+    font-size: $font-size-x-large;
+}
+.xx-large {
+    font-size: $font-size-xx-large;
+}
+.xxx-large {
+    font-size: $font-size-xxx-large;
+}
+.big {
+    font-size: $font-size-big;
+}
+.x-big {
+    font-size: $font-size-x-big;
+}
+.xx-big {
+    font-size: $font-size-xx-big;
+}
+.xxx-big {
+    font-size: $font-size-xxx-big;
+}
+/**
+*   END: Fonts Size
+*/
